@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+/* --- Navbar ---*/
 .navbar {
     position: fixed;
     width: 100%;
@@ -48,4 +50,34 @@
 .navbar-item:hover {
     background-color: transparent !important;
     color: aqua !important;
+}
+
+/* --- HOME ---*/
+.hero-body {
+    justify-content: center;
+}
+
+.home-name {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-desc {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 30px;
+    margin: 20px;
+    color: #fff;
 }
