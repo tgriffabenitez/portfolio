@@ -29,7 +29,7 @@
         <div class="navbar-menu nav-divider" id="nav-links">
             <a class="navbar-item" href="#inicio">Inicio</a>
             <a class="navbar-item" href="#proyectos">Proyectos</a>
-            <a class="navbar-item">Contacto</a>
+            <a class="navbar-item" href="#contacto">Contacto</a>
         </div>
     </div>
 
@@ -62,7 +62,7 @@
         <h1 class="titulo-proyectos">PROYECTOS</h1>
         <div class="hero-body">
             <div class="columns">
-                <div class="column is-offset-3 is-6">
+                <div class="column is-offset-3 is-6-tablet">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -99,6 +99,70 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contacto" id="contacto">
+        <h1 class="titulo-contacto">CONTACTO</h1>
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-offset-3 is-6-tablet">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+
+                                <div class="field">
+                                    <label class="label">Nombre</label>
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Nombre" required>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="email" placeholder="Email" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Asunto</label>
+                                    <div class="control">
+                                        <div class="select">
+                                            <select>
+                                                <option>Oportunidad laboral</option>
+                                                <option>Duda y/o consulta</option>
+                                                <option>Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Message</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="Textarea"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button class="button is-link">Enviar</button>
+                                    </div>
+                                    <div class="control">
+                                        <button class="button is-link is-light">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </section>
 
     <!-- scripts -->
