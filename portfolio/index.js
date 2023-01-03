@@ -10,7 +10,7 @@ burgerIcon.addEventListener("click", () => {
 /* Vanta wave animation */
 window.addEventListener('DOMContentLoaded', () => {
     VANTA.WAVES({
-    el: "#vanta",
+    el: "#inicio",
     mouseControls: false,
     touchControls: false,
     gyroControls: false,

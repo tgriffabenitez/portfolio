@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -27,15 +27,14 @@
         </div>
 
         <div class="navbar-menu nav-divider" id="nav-links">
-            <a class="navbar-item">Inicio</a>
-            <a class="navbar-item">Tecnologias</a>
-            <a class="navbar-item">Proyectos</a>
+            <a class="navbar-item" href="#inicio">Inicio</a>
+            <a class="navbar-item" href="#proyectos">Proyectos</a>
             <a class="navbar-item">Contacto</a>
         </div>
     </div>
 
     <!-- Home -->
-    <section class="hero is-fullheight" id="vanta">
+    <section class="hero is-fullheight is-bold" id="inicio">
         <div class="hero-body">
             <div class="columns is-desktop">
                 <div class="column is-12-desktop">
@@ -58,6 +57,49 @@
         </div>
     </section>
 
+    <!-- Proyectos -->
+    <section class="hero proyectos" id="proyectos">
+        <h1 class="titulo-proyectos">PROYECTOS</h1>
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-offset-3 is-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/ecommerce.png" alt="Proyecto ecommerce">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h4>TIENDA ECOMMERCE</h4>
+                                <p>Proyecto final del curso Full <em>Stack UTN & Capgemini</em> </p>
+                                <p>Principales caracteristicas de este proyecto:</p>
+                                <ul>
+                                    <li>Diseño responsive</li>
+                                    <li>Arquitectura API-Rest</li>
+                                    <li>Conexión a base de datos</li>
+                                    <li>Carrito de compras</li>
+                                    <li>Historial de compras de los usuarios</li>
+                                </ul>
+                                <p>Tecnologías utilizadas:</p>
+                                <ul>
+                                    <li>Angular</li>
+                                    <li>Java</li>
+                                    <li>MySQL</li>
+                                    <li>Spring</li>
+                                    <li>Hibernate</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item">Demo</a>
+                            <a href="#" class="card-footer-item">Github</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- scripts -->
     <script src="index.js"></script>

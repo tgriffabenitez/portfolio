@@ -81,3 +81,25 @@
     margin: 20px;
     color: #fff;
 }
+
+
+
+/* --- Proyectos ---*/
+.proyectos {
+    background-color: rgb(0, 85, 136);
+}
+
+.titulo-proyectos {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.content h4{
+    text-align: center;
+}
