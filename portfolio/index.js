@@ -1,11 +1,12 @@
-/* Navbar toggle */
-const burgerIcon = document.querySelector("#burger");
-const navbarMenu = document.querySelector("#nav-links");
-
-burgerIcon.addEventListener("click", () => {
-    navbarMenu.classList.toggle("is-active");
-});
-
+/* navbar efect */
+const navEl = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+    if(window.scrollY > 56){
+        navEl.classList.add("navbar-scrolled")
+    } else {
+        navEl.classList.remove("navbar-scrolled");
+    }
+})
 
 /* Vanta wave animation */
 window.addEventListener('DOMContentLoaded', () => {

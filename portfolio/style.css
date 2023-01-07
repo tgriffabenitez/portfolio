@@ -1,54 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*--- Navbar ---*/
-.navbar {
-    position: fixed;
+body {
     width: 100%;
-    background-color: rgb(0, 85, 136);
+    height: 100vh
 }
 
-.navbar-burger {
-    background-color:  rgb(0, 85, 136);
-    border: 2px solid #fff;
-    border-radius: 15px;
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    list-style: none;
 }
 
-.navbar-burger a span {
-    color: #fff;
+/*--- Navbar ---*/
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+    padding: 2px 0;
 }
 
-.navbar-menu { 
-    background-color: rgb(0, 85, 136);
-    justify-content: center;
-}
-
-.navbar-menu.is-active {
-    text-align: center;
-}
-
-.navbar-burger {
-    margin-right: 5px;
-}
-
-.navbar-burger span {
-    color: #fff;
-}
-
-.navbar-item {
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
     color: #fff;
     font-size: 25px;
-    font-weight: 700;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.navbar-item:hover {
-    background-color: transparent !important;
-    color: aqua !important;
+    margin-right: 30px;
+    padding: 0;
 }
 
 /*--- HOME ---*/
