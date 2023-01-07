@@ -16,7 +16,6 @@
 
 <body>
 
-
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,142 +38,30 @@
     </nav>
 
     <!-- Home -->
-    <section class="hero is-fullheight is-bold" id="inicio">
-        <div class="hero-body">
-            <div class="columns is-desktop">
-                <div class="column is-12-desktop">
-                    <h1 class="home-name">TOMAS GRIFFA</h1>
-                    <p class="home-desc">Desarrollador Java Full Stack</p>
-                    <div class="container social-icons">
-                        <a href="https://www.linkedin.com/in/tgriffabenitez" target="_blank" title="Linkedin">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.github.com/tgriffabenitez" target="_blank" title="Github">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://drive.google.com/file/d/1zGhsJOb7eabj9t1JKpbRqVFN0EsglLaq/view?usp=sharing"
-                            target="_blank">
-                            <i class="fa-solid fa-file-arrow-down" title="CV"></i>
-                        </a>
-                    </div>
+    <section class="inicio" id="inicio">
+        <div class="box">
+            <div class="home-box">
+                <div class="home-text">
+                    <h1>TOMAS GRIFFA</h1>
+                    <p>Desarrollador Java Full Stack</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos -->
-    <section class="hero proyectos" id="proyectos">
-        <div class="hero-body">
-            <h1 class="titulo-proyectos">PROYECTOS</h1>
-            <div class="columns">
-                <div class="column is-offset-3 is-6-tablet">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/ecommerce.png" alt="Proyecto ecommerce">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3>TIENDA ECOMMERCE</h3>
-                                <p>Proyecto final del curso Full <em>(Stack UTN & Capgemini)</em> </p>
-                                <div class="columns caracteristicas-tecnologias">
-                                    <div class="column column-caracteristicas is-6-desktop">
-                                        <h4>Características destacables</h4>
-                                        <ul>
-                                            <li>Diseño responsive</li>
-                                            <li>Diseño y consumo de API-Rest</li>
-                                            <li>Conexión a base de datos</li>
-                                            <li>Carrito de compras</li>
-                                            <li>Historial de compras</li>
-                                        </ul>
-                                    </div>
-                                    <div class="column column-tecnologias is-6-desktop">
-                                        <h4>Tecnologías utilizadas</h4>
-                                        <ul>
-                                            <li>Angular</li>
-                                            <li>Java</li>
-                                            <li>MySQL</li>
-                                            <li>Spring</li>
-                                            <li>Hibernate</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="#" class="card-footer-item">Github</a>
-                        </footer>
-                    </div>
+                <div class="home-icons">
+                    <a href="https://www.linkedin.com/in/tgriffabenitez" target="blank" title="Linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.github.com/tgriffabenitez" target="blank" title="Github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1zGhsJOb7eabj9t1JKpbRqVFN0EsglLaq/view?usp=sharing"
+                        target="blank">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </div> <!-- end home-box-->
+        </div> <!-- end box-->
+    </section> <!-- end inicio-->
 
-    <!-- Contacto -->
-    <section class="section contacto" id="contacto">
-        <div class="hero-body">
-            <h1 class="titulo-contacto">CONTACTO</h1>
-            <div class="columns">
-                <div class="column is-offset-3 is-6-tablet">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="content">
 
-                                <div class="field">
-                                    <label class="label">Nombre</label>
-                                    <div class="control">
-                                        <input class="input" type="text" placeholder="Nombre" required>
-                                    </div>
-                                </div>
-
-                                <div class="field">
-                                    <label class="label">Email</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input" type="email" placeholder="Email" required>
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="field">
-                                    <label class="label">Asunto</label>
-                                    <div class="control">
-                                        <div class="select">
-                                            <select>
-                                                <option>Oportunidad laboral</option>
-                                                <option>Duda y/o consulta</option>
-                                                <option>Otro</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="field">
-                                    <label class="label">Message</label>
-                                    <div class="control">
-                                        <textarea class="textarea" placeholder="Textarea"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="field is-grouped">
-                                    <div class="control">
-                                        <button class="button is-link">Enviar</button>
-                                    </div>
-                                    <div class="control">
-                                        <button class="button is-link is-light">Cancelar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </section>
 
     <!-- scripts -->
     <script src="index.js"></script>

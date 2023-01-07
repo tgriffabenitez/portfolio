@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,70 +34,41 @@ html {
 }
 
 /*--- HOME ---*/
-.hero-body {
-    justify-content: center;
+.inicio {
+    height: 100vh;
+    width: 100%;
 }
 
-.home-name {
+.box {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.home-text {
     color: #fff;
+    text-align: center;
+
+}
+
+.home-text h1 {
     font-size: 50px;
     font-weight: 700;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
-.home-desc {
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
+.home-text p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
 }
 
-.social-icons {
-    margin-top: 20px;
+.home-icons {
     text-align: center;
 }
 
-.social-icons a {
+.home-icons a {
     font-size: 30px;
     margin: 20px;
     color: #fff;
-}
-
-/*--- Proyectos ---*/
-.proyectos {
-    background-color: rgb(0, 85, 136);
-}
-
-.titulo-proyectos {
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-}
-
-.card {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-}
-
-.card-content .content h3{
-    text-align: center;
-    font-weight: 700;
-}
-
-.card-content .content p{
-    text-align: center;
-}
-
-.caracteristicas-tecnologias {
-    margin-top: 5px;
-}
-
-/*--- Contacto ---*/
-.contacto {
-    background-color: rgb(0, 85, 136);
-}
-
-.titulo-contacto {
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
+    text-decoration: none;
 }
