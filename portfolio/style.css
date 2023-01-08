@@ -189,12 +189,7 @@ section {
 
 @media (max-width: 989px) {
     .proyecto-info {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 964px) {
-    .proyecto-info {
+        margin-top: 20px;
         margin-left: 0;
         grid-template-areas:
             "titulo"
