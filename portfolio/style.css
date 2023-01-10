@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -90,7 +90,7 @@ section {
 /* ----- Proyectos ----- */
 .proyectos {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -103,7 +103,7 @@ section {
 }
 
 .proyecto-container {
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 50px;
 }
@@ -187,7 +187,115 @@ section {
     font-size: 25px;
 }
 
-@media (max-width: 989px) {
+/* ----- Contacto ----- */
+.contacto {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contacto h1 {
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+        "info form";
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-info {
+    grid-area: info;
+    margin-right: 25px;
+
+    display: grid;
+
+    grid-template-areas:
+        "texto"
+}
+
+.contacto-texto {
+    grid-area: texto;
+}
+
+.contacto-texto p {
+    grid-area: texto;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contacto-texto h4 {
+    grid-area: texto;
+    font-weight: 700;
+    color: aqua;
+}
+
+.contacto-texto ul {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.fa-brands,
+.fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #fff;
+}
+
+.contacto-form {
+    margin-left: 25px;
+    grid-area: form;
+
+    display: grid;
+    grid-template-areas:
+        "nombre"
+        "email"
+        "telefono"
+        "mensaje"
+        "botones";
+}
+
+.contacto-form form input {
+    margin-bottom: 10px;
+}
+
+.contacto-form form textarea {
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.contacto-nombre {
+    grid-area: nombre;
+}
+
+.contacto-email {
+    grid-area: email;
+}
+
+.contacto-telefono {
+    grid-area: telefono;
+}
+
+.contacto-mensaje {
+    grid-area: mensaje;
+}
+
+.contacto-botones {
+    grid-area: botones;
+}
+
+
+@media (max-width: 990px) {
     .proyecto-info {
         margin-top: 20px;
         margin-left: 0;
@@ -197,4 +305,44 @@ section {
             "tecnologias"
             "botones";
     }
+
+    .container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-areas:
+            "info info"
+            "form form";
+
+    }
+
+    .contacto-info {
+        grid-area: info;
+        margin-left: 0;
+        margin-right: 0;
+        display: grid;
+        grid-template-areas:
+            "texto"
+    }
+
+    .contacto-texto {
+        grid-area: texto;
+        color: #fff;
+    }
+
+
+    .contacto-form {
+        margin-top: 25px;
+        margin-left: 0;
+        margin-right: 0;
+        grid-area: form;
+
+        display: grid;
+        grid-template-areas:
+            "nombre"
+            "email"
+            "telefono"
+            "mensaje"
+            "botones";
+    }
+
 }
