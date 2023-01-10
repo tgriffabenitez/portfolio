@@ -39,6 +39,15 @@ section {
     padding: 2px 0;
 }
 
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    text-align: center;
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     color: #fff;
