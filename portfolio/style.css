@@ -89,7 +89,6 @@ section {
 
 /* ----- Proyectos ----- */
 .proyectos {
-    position: relative;
     min-height: 100vh;
     width: 100%;
 }
@@ -109,13 +108,19 @@ section {
 }
 
 .proyecto {
-    display: flex;
-    flex-flow: wrap;
-    align-items: normal;
+    display: grid;
+    padding: 25px;
+
+    grid-template-areas:
+        "imagen info";
+
     justify-content: center;
+    align-items: center;
 }
 
 .proyecto-imagen {
+    grid-area: imagen;
+
     position: relative;
     width: fit-content;
     aspect-ratio: 16/9;
@@ -296,6 +301,29 @@ section {
 
 
 @media (max-width: 990px) {
+    
+    .proyecto {
+        display: grid;
+
+        grid-template-areas:
+            "imagen"
+            "info";
+
+        justify-content: center;
+        align-items: center;
+    }
+    .proyecto-imagen {
+        grid-area: imagen;
+
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(221, 226, 242, 1) 25%, rgba(232, 235, 245, 1) 50%, rgb(196, 203, 231) 75%, rgba(224, 226, 243, 1) 100%);
+        ;
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px black;
+        padding: 25px;
+    }
+
     .proyecto-info {
         margin-top: 20px;
         margin-left: 0;
