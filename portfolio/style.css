@@ -32,6 +32,10 @@ section {
     position: relative;
 }
 
+.bg-blue{
+    background-color: rgb(2 69 110);
+}
+
 /* --------- Navbar --------- */
 .navbar-scrolled {
     background-color: rgba(0, 0, 0, 0.7);
@@ -113,7 +117,9 @@ section {
 .proyecto-container {
     display: grid;
     justify-content: center;
+    align-items: center;
     gap: 50px;
+    min-height: 80vh;
 }
 
 .proyecto {
@@ -222,6 +228,8 @@ section {
         "info form";
 
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 80vh;
 }
 
 .contacto-info {

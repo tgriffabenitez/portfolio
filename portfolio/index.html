@@ -23,7 +23,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mg-lg-0 py-2">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Inicio</a>
                 </li>
@@ -62,12 +62,55 @@
     </section> <!-- end inicio-->
 
     <!-- Proyectos -->
-    <section class="proyectos" id="proyectos">
-        <h1>PROYECTOS</h1>
+    <section class="proyectos" id="proyectos" style="padding: 0px;">
+        <h1 class="py-4">PROYECTOS</h1>
         <div class="proyecto-container">
-            <div class="proyecto">
-                <div class="proyecto-imagen">
-                    <img src="./img/home.png" alt="">
+            <div class="proyecto rounded bg-blue">
+                <div>
+                    <img class="h-100 object-fit-fill border rounded" src="./img/home.png" alt="">
+                </div>
+
+                <div class="proyecto-info">
+                    <div class="proyecto-titulo">
+                        <h3>Tienda Ecommerce</h3>
+                        <p>Proyecto final del curso Full-Stack dictado por la UTN junto a Capgemini</p>
+                    </div>
+                    <div class="proyecto-caracteristicas">
+                        <h4>Caracteristicas</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Diseno responsive</li>
+                            <li><i class="fa-solid fa-check"></i> Diseno de API-Rest</li>
+                            <li><i class="fa-solid fa-check"></i> Base de datos</li>
+                            <li><i class="fa-solid fa-check"></i> Sign-in / Sign-up </li>
+                            <li><i class="fa-solid fa-check"></i> Carrito de compras</li>
+                            <li><i class="fa-solid fa-check"></i> Historial de compras</li>
+                        </ul>
+                    </div>
+                    <div class="proyecto-tecnologias">
+                        <h4>Tecnologias</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-angle-right"></i> Angular</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Java</li>
+                            <li><i class="fa-solid fa-angle-right"></i> MySQL</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Spring Boot</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Hibernate</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="proyecto-botones">
+                        <a href="https://www.github.com/tgriffabenitez" target="blank" title="Github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" target="blank" title="Demo">
+                            <i class="fa-sharp fa-solid fa-gears"></i>
+                        </a>
+                    </div>
+                </div> <!-- end proyecto-info -->
+            </div> <!-- end proyecto -->
+
+            <div class="proyecto rounded bg-blue">
+                <div>
+                    <img class="h-100 object-fit-fill border rounded" src="./img/home.png" alt="">
                 </div>
 
                 <div class="proyecto-info">
@@ -108,15 +151,17 @@
                 </div> <!-- end proyecto-info -->
             </div> <!-- end proyecto -->
         </div> <!-- end proyecto-container-->
+        
     </section> <!-- end section-->
 
 
     <!-- Contacto -->
     <section class="contacto" id="contacto">
-        <h1>Contactame!</h1>
+        <h1 class="py-4">Contactame!</h1>
         <div class="container">
             <div class="contacto-info">
                 <div class="contacto-texto">
+                    <h2 class="text-white">Mandame un mensaje</h2>
                     <p>
                         Si tienes alguna duda, oportunidad laboral, o simplemente queres saludar.
                     </p>
@@ -140,30 +185,34 @@
                 </div>
             </div>
             <div class="contacto-form">
-                <form 
-                    name="contact" method="post" data-netlify="true" onSubmit="submit"
-                    data-netlify-honeypot="both-field"
-                >
-                    <input class="d-none" name="bot-field">
-                    <div class="contacto-nombre">
-                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre" required>
+                <form action="gracias.html" name="contacto" netlify>
+                    <div class="container-fluid py-5">
+                        <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-8 col-sm-10">
+                            <div class="form-group">
+                            <input placeholder="Nombre" type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-10">
+                            <div class="form-group">
+                                <input placeholder="Asunto" type="text" class="form-control" id="asunto" name="asunto">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <input placeholder="Email" type="email" class="form-control" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                            <textarea placeholder="Escribe tu mensaje..." id="mensaje" name="mensaje" class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <button type="submit" class="btn btn-success py-2 px-4">Enviar</button>
+                        </div>
+                        </div>
                     </div>
-                    <div class="contacto-email">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                    </div>
-                    <div class="contacto-telefono">
-                        <input type="tel" class="form-control" name="telefono" id="telefono"
-                            placeholder="Telefono (Opcional)">
-                    </div>
-                    <div class="contacto-mensaje">
-                        <textarea name="mensaje" class="form-control" id="mensaje" cols="30" rows="7"
-                            placeholder="Mensaje" required></textarea>
-                    </div>
-                    <div class="contacto-botones">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                        <button type="reset" class="btn btn-danger">Cancelar</button>
-                    </div>
-
                 </form>
             </div> <!-- end contacto-form -->
         </div> <!-- end container -->
